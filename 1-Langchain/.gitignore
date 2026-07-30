@@ -1,0 +1,74 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== Virtual environments =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== Environment / secrets =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.cer
+
+# ===== uv / pip =====
+.uv/
+pip-log.txt
+uv.lock
+
+# ===== Jupyter Notebook =====
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# ===== LangChain / LangSmith =====
+.langchain/
+.langsmith/
+*.faiss
+*.pkl
+chroma/
+chroma_db/
+*.sqlite3
+
+# ===== Ollama / local models =====
+models/
+*.gguf
+
+# ===== IDE / Editor =====
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Logs & temp =====
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+
+# ===== Test / cache =====
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
