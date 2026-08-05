@@ -70,4 +70,24 @@ Question → Retrieve (vector DB) → Prompt → LLM → Answer
 
 ---
 
-## The full
+## The full flow
+
+```text
+DATA SIDE (once)                QUERY SIDE (every question)
+─────────────────               ───────────────────────────
+Load  → Split                   Question
+      → Embed                       ↓
+      → Store  ─────────────►  Retrieve (similarity search)
+                                    ↓
+                                 Prompt (context + question)
+                                    ↓
+                                  LLM
+                                    ↓
+                                 Answer
+```
+
+---
+
+## In one line
+> **RAG = Store your data as vectors → retrieve the relevant pieces for each
+> question → let the LLM answer using that context.**
